@@ -726,7 +726,13 @@ export const PathfindingVisualizer = () => {
 
 
   return (
-    <div className="pathfinding-container">
+    <div className="pathfinding-container" style={{position:"relative"}}>
+      <div style={{position:"absolute", top:"0%", left:"1%", width:"200px", height:"160px", zIndex:999}}>
+        <img src="favicon.png" style={{width:"200px", height:"160px", filter:"invert(1)"}}></img>
+      </div>
+      <div style={{position:"absolute", top:"0%", right:"1%", width:"200px", height:"160px", zIndex:999}}>
+        <img src="favicon.png" style={{width:"200px", height:"160px", filter:"invert(1)"}}></img>
+      </div>
       <header className="pathfinding-header">
         <h1 className="pathfinding-title">Pathfinding Algorithm Visualizer</h1>
         <p className="pathfinding-subtitle">Interactive visualization of Dijkstra's and Bellman-Ford algorithms</p>
